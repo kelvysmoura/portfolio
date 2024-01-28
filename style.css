@@ -1,0 +1,90 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: Ubuntu, sans-serif;
+}
+
+section {
+  margin: 215px 0 0 350px;
+  max-width: 900px;
+}
+
+.aside {
+  position: fixed;
+  top: 0;
+  width: 240px;
+  background-image: linear-gradient(to bottom right, #C94666, #000);
+  height: 100vh;
+  padding: 150px 20px;
+}
+
+.aside .profile-image {
+  width: 250px;
+  height: 250px;
+  border-radius: 5px;
+  z-index: 1;
+  box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, .5);
+}
+
+.aside .menu-list {
+  margin-top: 20px;
+  list-style: none;
+}
+
+.aside .menu-item {
+  transition: all 1s;
+  line-height: 3;
+}
+
+.aside .menu-link {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.aside .menu-link:hover {
+  border-bottom: 2px solid #fff;
+}
+
+/* HOME */
+
+#home .section-title {
+  font-weight: bold;
+  font-size: 56px;
+}
+
+#home .email-link {
+  text-transform: uppercase;
+}
+
+#home .email-link {
+  color: #78293d;
+  text-decoration: none;
+}
+
+#home .email-link:hover {
+  color: #5E2130;
+}
+
+#home .links {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+#home .links li {
+  display: inline-block;
+}
+
+#home .links a {
+  background-color: #78293d;
+  color: #fff;
+  padding: 10px;
+  display: block;
+  text-decoration: none;
+}
+
+#home .links a:hover {
+  background-color: #5E2130
+}
