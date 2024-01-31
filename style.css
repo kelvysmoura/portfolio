@@ -172,3 +172,7 @@ section {
 #experience .company {
   color: var(--secondary);
 }
+
+#experience details summary {
+  cursor: pointer;
+}
