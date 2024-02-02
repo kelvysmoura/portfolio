@@ -9,6 +9,7 @@
   --secondary: #78293d;
   --hover: #5E2130;
   --dark: #17080C;
+  --shadow: 0 0 4px 0 rgba(0, 0, 0, .5);
 }
 
 html {
@@ -25,6 +26,14 @@ ul {
 
 ul:not(.menu-list) {
   padding: 0;
+}
+
+a {
+  color: var(--secondary)
+}
+
+a:hover {
+  color: var(--hover)
 }
 
 .aside {
@@ -68,7 +77,7 @@ ul:not(.menu-list) {
 
 section {
   padding: 215px 0 0 350px;
-  width: 900px;
+  max-width: 900px;
 }
 
 .section-title {
@@ -76,17 +85,15 @@ section {
 }
 
 .section-description {
-  margin: 5px 0;
+  margin: 10px 0;
   font-size: 18px;
   line-height: 1.3;
 }
 
-.section-content {
-  margin-top: 25px;
-}
+
 
 .section-content {
-  margin-top: 20px;
+  margin-top: 25px;
 }
 
 /* HOME */
@@ -131,12 +138,6 @@ section {
 
 /* SKILLS */
 
-#skills .tools {
-  margin-top: 25px;
-  padding: 10px;
-  width: 100%;
-}
-
 #skills .tools ul {
   display: flex;
   flex-wrap: wrap;
@@ -175,4 +176,34 @@ section {
 
 #experience details summary {
   cursor: pointer;
+}
+
+/* PROJECTS */
+
+#projects img {
+  width: 100%;
+  border: 1px solid #e2e2e2;
+}
+
+#projects .list {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 20px
+}
+
+#projects a {
+  flex-basis: 150px;
+  transition: transform 0.3s;
+}
+
+#projects a:hover {
+  transform: scale(1.03);
+}
+
+section {
+  display: none;
+}
+
+section:target {
+  display: block;
 }
