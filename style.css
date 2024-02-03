@@ -58,15 +58,13 @@ a:active {
   padding: 150px 20px;
 }
 
-
-
 .aside .profile-image {
   width: 250px;
   height: 250px;
   border-radius: 5px;
   box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, .5);
   object-fit: cover;
-  object-position: center
+  object-position: center -45px;
 }
 
 .aside .menu-list {
