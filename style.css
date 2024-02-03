@@ -20,12 +20,6 @@ html,body,main,section {
   height: 100%;
 }
 
-section {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
 ul {
   list-style: none;
 }
@@ -49,13 +43,10 @@ a:active {
 .aside {
   position: fixed;
   top: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   width: 240px;
   background-image: linear-gradient(to bottom right, var(--primary), #000);
   height: 100%;
-  padding: 150px 20px;
+  padding: 100px 20px;
 }
 
 .aside .profile-image {
@@ -90,7 +81,8 @@ a:active {
 /* SECTION */
 
 section {
-  padding: 0 0 0 350px;
+  padding: 5% 0 0 350px;
+  margin-top: 10%;
   max-width: 900px;
 }
 
@@ -103,8 +95,6 @@ section {
   font-size: 18px;
   line-height: 1.3;
 }
-
-
 
 .section-content {
   margin-top: 25px;
