@@ -190,6 +190,11 @@ section {
 
 #experience details summary {
   cursor: pointer;
+  transition: all 1s;
+}
+
+details summary {
+  transition: all 1s;
 }
 
 /* PROJECTS */
@@ -200,13 +205,13 @@ section {
 }
 
 #projects .list {
-  display: flex;
-  flex-flow: row wrap;
-  gap: 20px
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 150px);
+  gap: 20px;
 }
 
 #projects a {
-  flex-basis: 150px;
+  flex-basis: 200px;
   transition: transform 0.3s;
 }
 
