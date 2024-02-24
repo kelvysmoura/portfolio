@@ -67,4 +67,8 @@
     padding-top: 210px;
   }
 
+  #projects .card {
+    width: 100%;
+  }
+
 }
