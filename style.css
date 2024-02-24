@@ -59,7 +59,7 @@ a:active {
 }
 
 .aside .menu-list {
-  margin-top: 20px;
+  margin-top: 20px;  
 }
 
 .aside .menu-item {
@@ -196,7 +196,7 @@ details summary {
 
 #projects .list {
   display: grid;
-  grid-template-columns: repeat(auto-fill, 150px);
+  grid-template-columns: 1fr 1fr;
   gap: 20px;
 }
 
@@ -207,12 +207,4 @@ details summary {
 
 #projects a:hover {
   transform: scale(1.03);
-}
-/*
-section {
-  display: none;
-}
-
-section:target {
-  display: block;
 }
