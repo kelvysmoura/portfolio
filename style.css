@@ -126,6 +126,7 @@ section {
 
 #home .links li {
   display: inline-block;
+  margin-right: 5px;
 }
 
 #home .links a {
@@ -134,10 +135,11 @@ section {
   padding: 10px;
   display: block;
   text-decoration: none;
+  font-size: 26px;
 }
 
 #home .links a:hover {
-  background-color: var(--hover)
+  background-color: var(--hover);
 }
 
 /* SKILLS */
@@ -145,22 +147,14 @@ section {
 #skills .tools ul {
   display: flex;
   flex-wrap: wrap;
-  gap: 8px;
+  gap: 20px;
   margin-top: 10px;
 }
 
 #skills .tools li {
-  padding: 5px 0;
   color: var(--secondary);
-  border: 2px solid var(--secondary);
-  width: 80px;
-  height: 70px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   font-weight: bold;
-  font-size: 14px;
-  text-align: center;
+  font-size: 50px;
 }
 
 #skills .tools-title:not(:first-of-type) {
