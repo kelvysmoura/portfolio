@@ -1,91 +1,32 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-  font-family: Ubuntu, sans-serif;
+#projects {
+  max-width: 100%;
 }
 
-:root {
-  --primary: #C94666;
-  --secondary: #78293d;
-  --hover: #5E2130;
-  --dark: #17080C;
+#projects .project-cards {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
 }
 
-main {
-  padding-top: 50px;
+#projects .card {
+  width: 400px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  padding: 5px;
+  border: 1px solid #e2e2e2;
+  gap: 5px;
+  border-radius: 2px;
 }
 
-main, footer {
-  max-width: 900px;
-  margin: auto;
+#projects .card img {
+  border: 1px solid #e2e2e2;
 }
 
-
-
-a {
-  text-decoration: none;
-  color: var(--secondary);
+#projects .card {
+  transition: transform 0.3s;
 }
 
-a:hover {
-  color: var(--hover);
-}
-
-.post {
-  text-align: center;
-  border: 2px solid #eee;
-  padding: 20px;
-  margin: 10px;
-}
-
-.post .title {
-  text-align: center;
-  text-decoration: underline;
-}
-
-.post figure {
-  margin: 50px 0;
-}
-
-.post img {
-  width: 100%;
-  max-width: 500px;
-  border: 1px solid #333;
-}
-
-.post p {
-  margin: 15px 0;
-  text-align: justify;
-  font-size: 18px;
-  line-height: 1.3;
-}
-
-.links {
-  margin: 20px 0;
-  text-align: center;
-  padding: 0;
-}
-
-.links li {
-  display: inline-block;
-}
-
-.links a {
-  padding: 10px;
-  display: block;
-  text-decoration: none;
-}
-
-/* https: //www.responsivebreakpoints.com/ */
-
-#aluno {
-  display: none;
-}
-
-#aluno:target {
-  display: block;
-}
-
-#aluno:target + .content {
-  display: none;
+#projects .card:hover {
+  transform: scale(1.02);
 }
